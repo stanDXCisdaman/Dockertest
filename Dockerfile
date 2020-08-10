@@ -28,8 +28,6 @@ RUN yum install nodejs -y
 RUN git clone https://github.com/egt-interactive/devops-task.git
 WORKDIR devops-task/web/
 RUN npm install
-WORKDIR /devops-task/api
-RUN mvn clean install -Dmaven.test.skip=true
 WORKDIR /devops-task/api/src/main/resources
 
 
