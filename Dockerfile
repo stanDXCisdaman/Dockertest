@@ -25,7 +25,6 @@ RUN sudo systemctl enable mysqld
 RUN yum install curl -y
 RUN curl -sL https://rpm.nodesource.com/setup_10.x |sudo  bash -
 RUN yum install nodejs -y
-RUN git clone https://github.com/egt-interactive/devops-task.git
 WORKDIR devops-task/web/
 RUN npm install
 WORKDIR /devops-task/api/src/main/resources
